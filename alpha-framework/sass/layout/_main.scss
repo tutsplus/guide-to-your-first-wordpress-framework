@@ -1,0 +1,154 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Main content styles.
+ * ----------------------------------------------------------------------------------------
+ */
+
+/**
+ * Container adjacent to the sidebar.
+ * This will host the posts or page content.
+ */
+.main-content {
+	margin-bottom: $global-bottom-margin;
+}
+
+.post.type-post {
+	margin-bottom: $blog-post-bottom-margin;
+}
+
+/**
+ * 404.
+ */
+.container-404 {}
+
+/**
+ * Author bio.
+ */
+.author-bio {
+	.author-avatar {}
+
+	.author-description {}
+}
+
+/**
+ * Comments.
+ */
+.comments-area {
+	.comment-nav {
+		.comment-nav-next {}
+		.comment-nav-prev {}
+	}
+
+	.comments-title {}
+
+	.no-comments {}
+}
+
+.comments {
+	word-wrap: break-word;
+
+	.comment {
+		&.bypostauthor {
+			display: inline-block;
+		}
+
+		.comment-body {
+			img {
+				@extend .img-responsive;
+			}
+			
+			.comment-author {
+				.avatar {}
+			}
+
+			.comment-awaiting-moderation {}
+
+			.comment-meta {
+				.comment-edit-link {}
+			}
+
+			.reply {
+				.comment-reply-link {}
+			}
+		}
+	}
+}
+
+/**
+ * Comment form.
+ */
+.comment-respond {
+	.comment-reply-title {}
+
+	.comment-form {
+		// When logged off
+		.comment-notes {}
+
+		.form-allowed-tags {}
+
+		// When logged in
+		.logged-in-as {}
+	}
+}
+
+/**
+ * Entry header.
+ */
+.entry-header {
+	word-wrap: break-word;
+
+	img {
+		@extend .img-responsive;
+	}
+}
+
+/**
+ * Entry meta.
+ */
+.entry-meta {
+	.meta-categories {}
+
+	.meta-date {
+		.sticky & {
+			display: none;
+		}
+	}
+
+	.meta-featured-post {}
+
+	.meta-reply {}
+
+	.meta-tags {}
+}
+
+/**
+ * Entry content.
+ */
+.entry-content {
+	word-wrap: break-word;
+
+	img {
+		@extend .img-responsive;
+	}
+}
+
+.entry-thumbnail {
+	img {
+		@extend .img-responsive;
+	}
+}
+
+/**
+ * Entry footer.
+ */
+.entry-footer {}
+
+/**
+ * Galleries.
+ */
+.gallery-caption {}
+
+/**
+ * Not found.
+ */
+.not-found {}

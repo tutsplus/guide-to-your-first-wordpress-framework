@@ -1,0 +1,106 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Navigation styles.
+ * ----------------------------------------------------------------------------------------
+ */
+
+/**
+ * Main nav.
+ */
+.site-navigation {
+	float: right;
+
+	.site-menu {
+		li {
+			display: inline-block;
+			position: relative;
+		}
+
+		> li {
+			margin-left: $baseline;
+		}
+
+		.children,
+		.sub-menu {
+			display: none;
+			padding: 0;
+			position: absolute;
+
+			background-color: #fff;
+
+			z-index: 99999;
+
+			ul {
+				left: 100%;
+				top: 0;
+			}
+		}
+
+		li:hover > ul,
+		ul li:hover > ul {
+			display: block;
+		}
+	}
+
+	@media (max-width: 768px) {
+		display: none;
+	}
+}
+
+/**
+ * Responsive dropdown nav.
+ */
+.site-navigation-rwd {
+	display: none;
+
+	.site-menu-rwd {
+		margin: 0;
+		padding: 0;
+
+		li {
+			@extend .list-unstyled;
+
+			a {
+				display: block;
+				padding: $baseline / 3 0;
+
+				font-weight: bold;
+				font-size: .75em;
+				text-transform: uppercase;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+
+		.children,
+		.sub-menu {
+			padding-left: $baseline;
+		}
+	}
+}
+
+/**
+ * Responsive menu elements.
+ */
+#rwd-dropdown-trigger {
+	display: none;
+	float: right;
+
+	@media (max-width: 768px) {
+		display: inline-block;
+	}
+}
+
+.dropdown-check {
+	display: none;
+}
+
+.dropdown-check:checked + .site-navigation-rwd {
+	display: block;
+
+	@media (min-width: 769px) {
+		display: none;
+	}
+}

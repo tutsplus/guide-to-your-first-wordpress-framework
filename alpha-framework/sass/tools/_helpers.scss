@@ -1,0 +1,34 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Helper classes.
+ *
+ * Contains a few WordPress required classes.
+ * ----------------------------------------------------------------------------------------
+ */
+
+/**
+ * WordPress required classes.
+ */
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.sticky {}
+
+.wp-caption,
+.wp-caption-text,
+.gallery-caption {
+	max-width: 100%;
+
+	font-style: italic;
+}

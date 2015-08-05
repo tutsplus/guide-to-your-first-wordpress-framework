@@ -1,0 +1,44 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Widget styles.
+ * ----------------------------------------------------------------------------------------
+ */
+
+.widget {
+	margin-bottom: $widget-bottom-margin;
+
+	word-wrap: break-word;
+
+	img {
+		@extend .img-responsive;
+	}
+
+	ul,
+	ol {
+		padding-left: 0;
+
+		li ol,
+		li ul {
+			margin-left: $baseline;
+		}
+	}
+
+	> ul,
+	> ol,
+	.menu {
+		list-style: none;
+	}
+}
+
+/**
+ * Custom widget: Business hours.
+ */
+.widget-business-hours {
+	ul {
+		li {
+			span {
+				font-weight: bold;
+			}
+		}
+	}
+}

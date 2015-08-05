@@ -1,0 +1,27 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Form styles.
+ * ----------------------------------------------------------------------------------------
+ */
+
+form {
+	button,
+	input,
+	select,
+	textarea {
+		max-width: 100%;
+	}
+
+	input[type="submit"],
+	input[type="button"] {
+		-webkit-font-smoothing: antialiased;
+
+		@extend .btn;
+		@extend .btn-default;
+	}
+
+	input:not([type=submit]):not([type=file]):not([type=button]),
+	textarea {
+		@extend .form-control;
+	}
+}

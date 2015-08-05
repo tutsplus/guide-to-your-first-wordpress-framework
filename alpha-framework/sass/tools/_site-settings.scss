@@ -1,0 +1,45 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Site settings.
+ * ----------------------------------------------------------------------------------------
+ */
+
+// Colors
+$body-text-color: #222;
+$medium-text-color: lighten($body-text-color, 20%);
+$light-text-color: lighten($body-text-color, 50%);
+$link-color: #2980B9;
+$link-hover-color: #2C3E50;
+$border-color: #ccc;
+
+$color-1: #000;
+$color-2: #000;
+$color-3: #000;
+$color-4: #000;
+$color-5: #000;
+
+// Typography
+$base-font-size: 14px;
+$baseline: ($base-font-size * 1.5);
+
+$body-text-font: "Helvetica Neue", Arial, sans-serif;
+$heading-font: "Helvetica Neue", Arial, sans-serif;
+
+// Spacing
+$global-bottom-margin: ($baseline * 3);
+$blog-post-bottom-margin: ($baseline * 3);
+$widget-bottom-margin: ($baseline * 2);
+$header-tb-padding: $baseline;
+$header-lr-padding: 0;
+
+// Buttons
+$btn-1-bg: $color-1;
+$btn-1-text-color: #fff;
+$btn-2-bg: $color-2;
+$btn-2-text-color: #fff;
+$btn-3-bg: $color-3;
+$btn-3-text-color: #fff;
+$btn-4-bg: $color-4;
+$btn-4-text-color: #fff;
+$btn-5-bg: $color-5;
+$btn-5-text-color: #fff;

@@ -1,0 +1,111 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Base styles.
+ * ----------------------------------------------------------------------------------------
+ */
+
+body {
+	position: relative;
+	
+	color: $body-text-color;
+	font: #{$base-font-size}/#{$baseline} $body-text-font;
+	-webkit-font-smoothing: antialiased;
+}
+
+/**
+ * Default spacing for paragraphs.
+ */
+p {
+	margin-bottom: $baseline;
+}
+
+/**
+ * Default styles for all headings.
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: $baseline;
+
+	font-family: $heading-font;
+}
+
+/**
+ * Individual styles for the headings.
+ */
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+/**
+ * Links.
+ */
+a {
+	color: $link-color;
+	text-decoration: none;
+
+	&:hover {
+		color: $link-hover-color;
+		text-decoration: underline;
+	}
+}
+
+/**
+ * Blockquotes.
+ */
+blockquote {
+	font-style: italic;
+
+	cite {
+		display: block;
+	}
+}
+
+/**
+ * HR.
+ */
+hr {
+	margin: $baseline 0;
+	
+	border-color: $border-color;
+}
+
+/**
+ * Make sure videos and embeds fit inside their containers.
+ */
+embed,
+iframe,
+object,
+video {
+	max-width: 100%;
+}
+
+/**
+ * Fluid images for posts.
+ */
+img[class*="wp-image-"],
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+	@extend .img-responsive;
+}
+
+/**
+ * Code.
+ */
+code {
+	white-space: normal;
+}

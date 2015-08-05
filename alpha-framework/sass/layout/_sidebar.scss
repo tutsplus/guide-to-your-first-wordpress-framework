@@ -1,0 +1,28 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Sidebar styles.
+ * ----------------------------------------------------------------------------------------
+ */
+
+/**
+ * Main sidebar.
+ */
+.sidebar {
+	margin-bottom: $global-bottom-margin;
+	
+	.rss-date {
+		display: block;
+
+		font-style: italic;
+	}
+
+	.rssSummary + cite {
+		display: block;
+		margin-bottom: $baseline;
+	}
+}
+
+/**
+ * Footer sidebar.
+ */
+.footer-sidebar {}
